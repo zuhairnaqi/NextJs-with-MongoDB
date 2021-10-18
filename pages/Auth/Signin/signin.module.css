@@ -1,0 +1,74 @@
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+.rightContainer {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+.leftContainer {
+    flex: 7;
+    position: relative;
+}
+.bgImage {
+    position: relative !important;
+    object-fit: cover;
+}
+
+.formHeading {
+    color: #a9a9a9;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+.formLabel {
+    color: #c3c3c3;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.inputContainer {
+    margin: 10px 0px;
+    width: 80%;
+}
+.input {
+    width: 100%;
+    border-width: 0px;
+    border-bottom: 1px solid #c3c3c3;
+    outline: none;
+    font-size: 20px;
+}
+.signButton {
+    background-color: #696969;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 50px;
+    border-radius: 30px;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+.lineBreakerContainer {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    margin: 20px 0px;
+}
+.lineBreaker {
+    border-bottom: 1px solid #c3c3c3;
+    flex: 1;
+    margin: 0px 8px
+}
+.socialAuthContainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.socialAuthTitle {
+    font-size: 14px;
+    margin-left: 6px;
+}

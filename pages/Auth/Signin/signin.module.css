@@ -15,6 +15,7 @@
 .leftContainer {
     flex: 7;
     position: relative;
+    border-right: 1px solid rgb(180, 176, 176);
 }
 .bgImage {
     position: relative !important;
@@ -44,6 +45,7 @@
     font-size: 20px;
 }
 .signButton {
+    border: 1px solid #fff;
     background-color: #696969;
     color: #fff;
     font-size: 18px;
@@ -51,6 +53,11 @@
     border-radius: 30px;
     margin: 20px 0px;
     cursor: pointer;
+}
+.signButton:hover {
+    background-color: #fff;
+    color: #696969;
+    border: 1px solid #696969;
 }
 .lineBreakerContainer {
     display: flex;
@@ -67,6 +74,8 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    width: 180px;
+    margin-bottom: 10px;
 }
 .socialAuthTitle {
     font-size: 14px;

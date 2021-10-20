@@ -37,10 +37,17 @@ export default function Home() {
 
                     <div className={styles.socialAuthContainer}>
                         <img src="https://cdn.iconscout.com/icon/free/png-256/google-2981831-2476479.png"
-                            height="30px"
-                            width="30px"
+                            height="25px"
+                            width="25px"
                         />
                         <a className={styles.socialAuthTitle} href="../../api/auth/google">Sign in with google</a>
+                    </div>
+                    <div className={styles.socialAuthContainer}>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
+                            height="25px"
+                            width="25px"
+                        />
+                        <a className={styles.socialAuthTitle} href="../../api/auth/facebook">Sign in with facebook</a>
                     </div>
                 </div>
             </div>

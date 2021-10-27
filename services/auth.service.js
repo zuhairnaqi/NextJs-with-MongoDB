@@ -1,6 +1,6 @@
-const User = require('../models/user.model');
+import User from '../models/user.model';
 
-const socialLogin = async ({ user, token }) => {
+export const socialLogin = async ({ user, token }) => {
     const { email, name, id } = await getProviderData({ user, token });
     const newUser = await User.create({
         email,
@@ -10,7 +10,8 @@ const socialLogin = async ({ user, token }) => {
     });
     return { data: newUser, statusCode: 200 };
 }
-const getProviderData = async ({ user, token }) => {
+
+export const getProviderData = async ({ user, token }) => {
     if (user.provider == 'google') {
         const { emails, displayName, id } = user;
         return { email: emails[0].value, name: displayName, id };
@@ -26,6 +27,3 @@ const getProviderData = async ({ user, token }) => {
     throw new ApiError(httpStatus.NOT_FOUND, 'Provider data not found');
 };
 
-module.exports = {
-    socialLogin,
-}

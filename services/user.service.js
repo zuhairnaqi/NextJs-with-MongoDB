@@ -1,9 +1,5 @@
-const User = require('../models/user.model');
+import User from '../models/user.model';
 
-const getBySocial = async (provider_id, provider) => {
+export const getBySocial = async (provider_id, provider) => {
     return User.findOne({ provider_id, provider });
-};
-
-module.exports = {
-    getBySocial,
 };

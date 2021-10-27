@@ -1,2 +1,2 @@
-module.exports.authService = require('./auth.service');
-module.exports.userService = require('./user.service');
+export * as authService from './auth.service';
+export * as userService from './user.service';

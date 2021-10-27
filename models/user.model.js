@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const userSchema = mongoose.Schema(
     {
@@ -64,4 +64,4 @@ const toJSON = (schema) => {
   userSchema.plugin(toJSON);
 
 
-module.exports = mongoose.models.User ||  mongoose.model('User', userSchema)
+  export default mongoose.models.User ||  mongoose.model('User', userSchema)

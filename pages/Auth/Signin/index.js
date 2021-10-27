@@ -40,14 +40,14 @@ export default function Home() {
                             height="25px"
                             width="25px"
                         />
-                        <a className={styles.socialAuthTitle} href="../../api/auth/google">Sign in with google</a>
+                        <a className={styles.socialAuthTitle} href="../../api/auth/google">Sign in with Google</a>
                     </div>
                     <div className={styles.socialAuthContainer}>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
                             height="25px"
                             width="25px"
                         />
-                        <a className={styles.socialAuthTitle} href="../../api/auth/facebook">Sign in with facebook</a>
+                        <a className={styles.socialAuthTitle} href="../../api/auth/facebook">Sign in with Facebook</a>
                     </div>
                 </div>
             </div>

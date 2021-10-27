@@ -1,6 +1,6 @@
-const {authService, userService} = require('../services');
+import {authService, userService} from '../services';
 
-const socialAuthentication = async (req, res) => {
+export const socialAuthentication = async (req, res) => {
     const {user, authInfo: token} = req;
     const oldUser = await userService.getBySocial(user.id, user.provider);
     if (!oldUser) {
@@ -11,7 +11,3 @@ const socialAuthentication = async (req, res) => {
     }
     res.redirect(`http://localhost:5000/Dashboard`);
 };
-
-module.exports = {
-    socialAuthentication
-}
